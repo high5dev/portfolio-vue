@@ -1,6 +1,10 @@
 <template>
     <header class="flex justify-between items-center p-6 bg-opacity-50 relative z-20 ">
-        <div class="text-white text-3xl font-bold">LOGO</div>
+        <div class="text-white text-3xl font-bold">
+            <span class="text-5xl">
+                <img src="/src/assets/favicon.png" alt="menu" width="50" height="50">
+            </span>
+        </div>
         <!-- Mobile Toggle Button -->
          <div class="md:hidden z-30">
          <button type="button" 

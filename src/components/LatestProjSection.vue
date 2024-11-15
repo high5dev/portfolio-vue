@@ -4,7 +4,7 @@
             <div class="mb-4 md:flex md:justify-between xl:pr-16">
                 <h2 class="text-4xl font-bold text-white"> My Latest Projects</h2>
                 <div class="flex space-x-4 mb-4 mt-5 md:mt-0">
-                    <button class="hover:text-primary" v-for="category in ['all', 'web development', 'Mobile App']"
+                    <button class="hover:text-primary" v-for="category in ['All', 'Web development', 'Blockchain development','Data scrapy','Mobile App']"
                         :key="category" @click="() => selectedCategory = category">
                         {{ category }}
                     </button>
@@ -19,7 +19,7 @@
                     hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500
                     ">
                         <a class="h-14 w-14 mr-2 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
-                            :href="project.webURL"> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                            :href="project.gitURL"> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
                                 viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"
                                 data-slot="icon"
                                 class="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white">
@@ -28,7 +28,7 @@
                                 </path>
                             </svg></a><a
                             class="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
-                            :href="project.gitURL"> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                            :href="project.webURL"> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
                                 viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"
                                 data-slot="icon"
                                 class="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white">
@@ -62,69 +62,69 @@ import { ref, computed } from 'vue';
 const Projects = ref([
     {
         id: 1,
-        category: 'web development',
-        image: 'src/assets/project.png',
-        title: 'project 1',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tenetur quasi ipsam labore sapiente, accusamus necessitatibus laboriosam non voluptas inventore deserunt dolore modi ex, praesentium at provident nihil magni ratione!',
-        technologies: ['vue.js 3', 'vuex', 'Express'],
-        gitURL: '',
-        webURL: ''
+        category: 'Web development',
+        image: 'src/assets/projects/portfolio-vue.png',
+        title: 'Personal Portfolio with Vue3',
+        description: 'Designed and developed a personal portfolio website to showcase my skills, projects, and professional journey. The website is responsive and built using HTML, CSS, and JavaScript, featuring smooth animations and a user-friendly layout.',
+        technologies: ['vue.js 3', 'vite', 'Tailwind', 'vue3-carousel', 'aos'],
+        gitURL: 'https://github.com/high5dev/portfolio-vue',
+        webURL: 'https://dinhthang-vue.vercel.app/'
     },
     {
         id: 2,
-        category: '3D Portfolio Showcase Website',
+        category: 'Web development',
         image: 'src/assets/projects/3D_portfolio.png',
-        title: 'project 1',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tenetur quasi ipsam labore sapiente, accusamus necessitatibus laboriosam non voluptas inventore deserunt dolore modi ex, praesentium at provident nihil magni ratione!',
+        title: '3D Portfolio Showcase Website',
+        description: 'Developed an innovative 3D portfolio showcase website using Three.js to create immersive 3D environments. The website allows users to explore projects in a visually engaging manner, providing an interactive experience.',
         technologies: ['Three.js', 'React', 'CSS', 'Tailwind', 'Vite', 'Blender'],
         gitURL: 'https://github.com/high5dev/3d-portfolio-1st',
         webURL: 'https://dinhthang-3d.vercel.app/'
     },
     {
         id: 3,
-        category: 'web development',
-        image: 'src/assets/project.png',
-        title: 'project 1',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tenetur quasi ipsam labore sapiente, accusamus necessitatibus laboriosam non voluptas inventore deserunt dolore modi ex, praesentium at provident nihil magni ratione!',
-        technologies: ['vue.js 3', 'vuex', 'Express'],
-        gitURL: '',
+        category: 'Data scrapy',
+        image: 'src/assets/projects/scrapper-amazon.png',
+        title: 'Amazon Product Scrapper',
+        description: 'Scraping Amazon Product Pages: The scraper extracts various product details from Amazon, including title, brand, specs, and features. Windows Executable no to run script file, Scrapped data saving in CSV and PDF. Gracefully handliing errors and warnings.',
+        technologies: ['Python', 'Beautifulsoup', 'tkinter', 'reportlab', 'urllib3', 'Pillow'],
+        gitURL: 'https://github.com/high5dev/amazon-scrapper-tkinter',
         webURL: ''
     },
     {
         id: 4,
-        category: 'Mobile App',
-        image: 'src/assets/mobile.jpg',
-        title: 'project 1',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tenetur quasi ipsam labore sapiente, accusamus necessitatibus laboriosam non voluptas inventore deserunt dolore modi ex, praesentium at provident nihil magni ratione!',
-        technologies: ['vue.js 3', 'vuex', 'Express'],
+        category: 'Blockchain development',
+        image: 'src/assets/projects/NFT-marketplace.png',
+        title: 'NFT Marketplace',
+        description: 'Created a marketplace for non-fungible tokens (NFTs) where users can mint, buy, and sell digital assets. Integrated payment processing for crypto transactions and implemented user authentication. The software architecture is MERN stack.',
+        technologies: ['React', 'Node.js', 'MongoDB', 'Soidity', 'CSS'],
         gitURL: '',
         webURL: ''
     },
     {
         id: 5,
-        category: 'web development',
-        image: 'src/assets/project.png',
-        title: 'project 1',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tenetur quasi ipsam labore sapiente, accusamus necessitatibus laboriosam non voluptas inventore deserunt dolore modi ex, praesentium at provident nihil magni ratione!',
-        technologies: ['vue.js 3', 'vuex', 'Express'],
+        category: 'Web development',
+        image: 'src/assets/projects/E-Commerce.png',
+        title: 'E-Commerce Web Application',
+        description: 'Developed a robust e-commerce platform using Angular for the front end and Laravel for the back end. Implemented features like product management, user authentication, and payment processing to create a seamless shopping experience.',
+        technologies: ['Angular', 'Laravel', 'MySQL', 'RESTful API', 'DB Architecture'],
         gitURL: '',
         webURL: ''
     },
     {
         id: 6,
         category: 'Mobile App',
-        image: 'src/assets/mobile.jpg',
-        title: 'project 1',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tenetur quasi ipsam labore sapiente, accusamus necessitatibus laboriosam non voluptas inventore deserunt dolore modi ex, praesentium at provident nihil magni ratione!',
-        technologies: ['vue.js 3', 'vuex', 'Express'],
+        image: 'src/assets/projects/mobile.jpg',
+        title: 'E-commerce app',
+        description: 'Developed a cross-platform e-commerce app that allows users to browse products, make purchases, and track orders. Payment processing with Stripe and Firebase for real-time data syncing. Built custom UI components to enhance user experience and improve app performance.',
+        technologies: ['Figma', 'React Native', 'Flutter', 'Swift', 'Stripe', 'Google Maps API'],
         gitURL: '',
         webURL: ''
     }
 ]);
 
-const selectedCategory = ref('all');
+const selectedCategory = ref('All');
 const filteredProjects = computed(() => {
-    if (selectedCategory.value === 'all') {
+    if (selectedCategory.value === 'All') {
         return Projects.value;
     }
     return Projects.value.filter(project => project.category.toLocaleLowerCase() === selectedCategory.value.toLocaleLowerCase());
