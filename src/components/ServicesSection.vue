@@ -29,39 +29,39 @@ import {ref} from 'vue';
 const services =ref([
     {
         id:1,
-        icon:'https://img.icons8.com/ios-filled/100/ffffff/google-code.png',
+        icon:'src/assets/icons/web_96px.png',
         name:'WEB DEVELOPMENT',
-        description:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, ut!'
+        description:'Building responsive, user-friendly websites using modern technologies like HTML, CSS, JavaScript, and frameworks such as React, Vue.js and Angular.'
     },
     {
         id:2,
-        icon:'https://img.icons8.com/external-vectorslab-glyph-vectorslab/100/fffeee/external-Technical-Writing-mobile-app-development-vectorslab-glyph-vectorslab.png',
+        icon:'src/assets/icons/documents_96px.png',
         name:'Technical Writing',
-        description:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, ut!'
+        description:'Crafting clear, concise documentation, user guides, and technical content to simplify complex concepts for developers and end-users.'
     },
     {
         id:3,
-        icon:'https://img.icons8.com/external-solid-design-circle/100/ffffff/external-Mobile-Development-digital-marketing-solid-design-circle.png',
+        icon:'src/assets/icons/mobile_96px.png',
         name:'Mobile Development',
-        description:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, ut!'
+        description:'Creating intuitive and high-performance mobile apps for iOS and Android using frameworks like React Native or Flutter.'
     },
     {
         id:4,
-        icon:'https://img.icons8.com/ios-filled/100/ffffff/email-open.png',
-        name:'WEB DEVELOPMENT',
-        description:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, ut!'
+        icon:'src/assets/icons/docker_96px.png',
+        name:'Containerization',
+        description:'Streamlining software development and deployment processes by automating workflows, managing cloud infrastructure, and ensuring system reliability.'
     },
     {
         id:5,
-        icon:'https://img.icons8.com/ios-filled/100/ffffff/windows10-personalization.png',
-        name:'Graphic Design',
-        description:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, ut!'
+        icon:'src/assets/icons/database_administrator_96px.png',
+        name:'Database Administration',
+        description:'Designing, managing, and optimizing databases for performance, security, and scalability, with expertise in SQL and NoSQL systems.'
     },
     {
         id:6,
-        icon:'https://img.icons8.com/ios-filled/100/ffffff/web-design.png',
+        icon:'src/assets/icons/figma_96px.png',
         name:'Web Design',
-        description:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, ut!'
+        description:'Designing visually engaging, user-centered websites and interfaces with a focus on aesthetics, functionality, and responsive layouts.'
     },
     ])
 </script>

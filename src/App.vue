@@ -11,8 +11,8 @@
             <AboutSection />
             <ExperienceAndSkills />
             <LatestProjSection />
-            <ContactSection />
             <TestimonialsSection />
+            <ContactSection />
             <Footer />
             <BackToTop />
       </div>

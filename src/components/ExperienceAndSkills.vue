@@ -16,7 +16,6 @@
                         <h4 class="font-semibold uppercase text-white">
                             {{ skill.name }}
                         </h4>
-                        <h3 class="text-2xl font-bold text-white">{{ skill.width }}</h3>
                     </div>
                     <div class="mt-2 h-1 w-full bg-[#131d30] rounded-full">
                         <div class="h-1 rounded-full bg-primary" :style="`width :${skill.width}`"></div>
@@ -50,38 +49,106 @@ import { ref } from 'vue';
 const Skills =ref([
     {
         id:1,
-        name:'HTmL & CSS',
-        width:'85%'
+        name:'HTmL & CSS & JS',
+        width:'98%'
     },
     {
         id:2,
         name:'Python',
-        width:'70%'
+        width:'75%'
     },
     {
         id:3,
-        name:'JavaScript',
-        width:'98%'
+        name:'PHP',
+        width:'85%'
     },
     {
         id:4,
-        name:'figma',
+        name:'React & Vue & Angular',
+        width:'88%'
+    },
+    {
+        id:5,
+        name:'Laravel & CI & Wordpress',
+        width:'81%'
+    },
+    {
+        id:6,
+        name:'Django & Flask',
+        width:'70%'
+    },
+    {
+        id:7,
+        name:'Markdown Editors',
+        width:'75%'
+    },
+    {
+        id:8,
+        name:'React Native',
         width:'91%'
+    },
+    {
+        id:9,
+        name:'Flutter',
+        width:'85%'
+    },
+    {
+        id:10,
+        name:'AWS & Azure & GCP & Docker',
+        width:'92%'
+    },
+    {
+        id:11,
+        name:'Navicat Premium & Mongodb',
+        width:'98%'
+    },
+    {
+        id:12,
+        name:'figma & Adobe XD',
+        width:'91%'
+    },
+    {
+        id:13,
+        name:'Web Scrapy',
+        width:'68%'
+    },
+    {
+        id:14,
+        name:'Blender',
+        width:'70%'
     },
 ]);
 
 const Experinces =ref([
     {
         id:1,
-        role:'Software Engineer',
-        company:'Microsoft',
-        date:'Mar 2023 - September 2024'
+        role:'Freelancer',
+        company:'Upwork',
+        date:'October 2024- November 2024'
     },
     {
         id:2,
-        role:'Frontend Developer',
-        company:'Spotify',
-        date:'Mar 2022 - September 2023'
+        role:'Senior Blockchain developer',
+        company:'Gihot',
+        date:'October 2021 - November 2023'
+    },
+    {
+        id:3,
+        role:'Web3 developer',
+        company:'Orient Software',
+        date:'February 2020 - September 2021'
+    },
+    {
+        id:4,
+        role:'Full Stack Developer',
+        company:'RECentral',
+        date:'September 2016 - July 2019'
+    },
+    {
+        id:5,
+        role:'Backend Developer',
+        company:'Bytes Software Services',
+        date:'October 2014 - March 2016'
     },
 ])
 </script>

@@ -72,13 +72,13 @@ const Projects = ref([
     },
     {
         id: 2,
-        category: 'Mobile App',
-        image: 'src/assets/mobile.jpg',
+        category: '3D Portfolio Showcase Website',
+        image: 'src/assets/projects/3D_portfolio.png',
         title: 'project 1',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tenetur quasi ipsam labore sapiente, accusamus necessitatibus laboriosam non voluptas inventore deserunt dolore modi ex, praesentium at provident nihil magni ratione!',
-        technologies: ['vue.js 3', 'vuex', 'Express'],
-        gitURL: '',
-        webURL: ''
+        technologies: ['Three.js', 'React', 'CSS', 'Tailwind', 'Vite', 'Blender'],
+        gitURL: 'https://github.com/high5dev/3d-portfolio-1st',
+        webURL: 'https://dinhthang-3d.vercel.app/'
     },
     {
         id: 3,
