@@ -113,7 +113,7 @@ const Projects = ref([
     {
         id: 6,
         category: 'Mobile App',
-        image: 'src/assets/projects/mobile.jpg',
+        image: '@/assets/projects/mobile.jpg',
         title: 'E-commerce app',
         description: 'Developed a cross-platform e-commerce app that allows users to browse products, make purchases, and track orders. Payment processing with Stripe and Firebase for real-time data syncing. Built custom UI components to enhance user experience and improve app performance.',
         technologies: ['Figma', 'React Native', 'Flutter', 'Swift', 'Stripe', 'Google Maps API'],
